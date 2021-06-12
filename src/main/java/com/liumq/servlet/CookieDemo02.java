@@ -1,5 +1,7 @@
 package com.liumq.servlet;
 
+import org.apache.jasper.runtime.HttpJspBase;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +16,7 @@ import java.io.IOException;
 public class CookieDemo02 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
 
         //解决中文乱码
         req.setCharacterEncoding("utf-8");
